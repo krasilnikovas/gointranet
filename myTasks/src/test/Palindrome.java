@@ -12,11 +12,11 @@ public class Palindrome {
 
 
     // ---------------------- STRING solutions ----------------------
-    public static Boolean isThisStringPalindromSolutionOne(String someString) {
+    public static boolean isThisStringPalindromSolutionOne(String someString) {
         return someString.equals((new StringBuilder(someString)).reverse().toString());
     }
 
-    public static Boolean isThisStringPalindromSolutionTwo(String someString) {
+    public static boolean isThisStringPalindromSolutionTwo(String someString) {
         char [] arr = someString.toCharArray();
         for (int i = 0; i < arr.length; i++) {
             if (arr[i] != arr[arr.length - i - 1])
@@ -27,12 +27,12 @@ public class Palindrome {
 
 
     // ---------------------- INT solutions ----------------------
-    public static Boolean isThisIntPalindromSolutionOne(int someInt) {
+    public static boolean isThisIntPalindromSolutionOne(int someInt) {
         String someString = Integer.toString(someInt);
         return someString.equals((new StringBuilder(someString)).reverse().toString());
     }
 
-    public static Boolean isThisIntPalindromSolutionTwo(int someInt) {
+    public static boolean isThisIntPalindromSolutionTwo(int someInt) {
         char [] arr = Integer.toString(someInt).toCharArray();
         for (int i = 0; i < arr.length; i++) {
             if (arr[i] != arr[arr.length - i - 1])
